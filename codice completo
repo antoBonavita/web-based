@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito del Corso</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .header__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header__title {
+            font-size: 24px;
+        }
+
+        .header__nav {
+            display: none;
+        }
+
+        .header__nav-list {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .header__nav-item {
+            margin-left: 20px;
+        }
+
+        .header__nav-item a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .header__hamburger {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Sezione Chi Siamo */
+        .about {
+            padding: 40px 0;
+            background-color: #f4f4f4;
+        }
+
+        .about__container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about__title {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about__text {
+            font-size: 18px;
+        }
+
+        /* Sezione Corsi */
+        .courses {
+            padding: 40px 0;
+        }
+
+        .courses__container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .courses__list {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .courses__item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            width: 45%;
+        }
+
+        .courses__item-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+
+        .contact {
+            padding: 40px 0;
+            background-color: #f4f4f4;
+        }
+
+        .contact__container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact__form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact__input, .contact__textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .contact__button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Adattabilità (Responsive Design) */
+        @media (min-width: 768px) {
+            .header__nav {
+                display: block;
+            }
+
+            .header__hamburger {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__title">Corso di Sviluppo Web</h1>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#about">Chi Siamo</a></li>
+                    <li class="header__nav-item"><a href="#courses">Corsi</a></li>
+                    <li class="header__nav-item"><a href="#contact">Contatti</a></li>
+                </ul>
+            </nav>
+            <div class="header__hamburger" id="hamburger">☰</div>
+        </div>
+    </header>
+
+    <!-- Sezione Chi Siamo -->
+    <section class="about" id="about">
+        <div class="about__container">
+            <h2 class="about__title">Chi Siamo</h2>
+            <p class="about__text">Offriamo corsi di alta qualità per creare siti web moderni e funzionali.</p>
+        </div>
+    </section>
+
+    <!-- Sezione Corsi -->
+    <section class="courses" id="courses">
+        <div class="courses__container">
+            <h2 class="courses__title">I Nostri Corsi</h2>
+            <div class="courses__list">
+                <div class="courses__item">
+                    <h3 class="courses__item-title">Corso Base</h3>
+                    <p class="courses__item-text">Impara le basi dello sviluppo web.</p>
+                </div>
+                <div class="courses__item">
+                    <h3 class="courses__item-title">Corso Avanzato</h3>
+                    <p class="courses__item-text">Approfondisci con tecnologie avanzate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Contatti -->
+    <section class="contact" id="contact">
+        <div class="contact__container">
+            <h2 class="contact__title">Contattaci</h2>
+            <form class="contact__form">
+                <input class="contact__input" type="text" placeholder="Nome">
+                <input class="contact__input" type="email" placeholder="Email">
+                <textarea class="contact__textarea" placeholder="Messaggio"></textarea>
+                <button class="contact__button">Invia</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            const nav = document.querySelector('.header__nav');
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+
+</body>
+</html>
