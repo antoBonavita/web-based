@@ -1,0 +1,144 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__title {
+    font-size: 24px;
+}
+
+.header__nav {
+    display: none;
+}
+
+.header__nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.header__nav-item {
+    margin-left: 20px;
+}
+
+.header__nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__hamburger {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Sezione Chi Siamo */
+.about {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.about__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about__text {
+    font-size: 18px;
+}
+
+/* Sezione Corsi */
+.courses {
+    padding: 40px 0;
+}
+
+.courses__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.courses__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.courses__item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 45%;
+}
+
+.courses__item-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Sezione Contatti */
+.contact {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.contact__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__input, .contact__textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.contact__button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Adattabilità (Responsive Design) */
+@media (min-width: 768px) {
+    .header__nav {
+        display: block;
+    }
+
+    .header__hamburger {
+        display: none;
+    }
+}
