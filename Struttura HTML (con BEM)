@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito del Corso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__title">Corso di Sviluppo Web</h1>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#about">Chi Siamo</a></li>
+                    <li class="header__nav-item"><a href="#courses">Corsi</a></li>
+                    <li class="header__nav-item"><a href="#contact">Contatti</a></li>
+                </ul>
+            </nav>
+            <div class="header__hamburger" id="hamburger">☰</div>
+        </div>
+    </header>
+
+    <!-- Sezione Chi Siamo -->
+    <section class="about" id="about">
+        <div class="about__container">
+            <h2 class="about__title">Chi Siamo</h2>
+            <p class="about__text">Offriamo corsi di alta qualità per creare siti web moderni e funzionali.</p>
+        </div>
+    </section>
+
+    <!-- Sezione Corsi -->
+    <section class="courses" id="courses">
+        <div class="courses__container">
+            <h2 class="courses__title">I Nostri Corsi</h2>
+            <div class="courses__list">
+                <div class="courses__item">
+                    <h3 class="courses__item-title">Corso Base</h3>
+                    <p class="courses__item-text">Impara le basi dello sviluppo web.</p>
+                </div>
+                <div class="courses__item">
+                    <h3 class="courses__item-title">Corso Avanzato</h3>
+                    <p class="courses__item-text">Approfondisci con tecnologie avanzate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Contatti -->
+    <section class="contact" id="contact">
+        <div class="contact__container">
+            <h2 class="contact__title">Contattaci</h2>
+            <form class="contact__form">
+                <input class="contact__input" type="text" placeholder="Nome">
+                <input class="contact__input" type="email" placeholder="Email">
+                <textarea class="contact__textarea" placeholder="Messaggio"></textarea>
+                <button class="contact__button">Invia</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
