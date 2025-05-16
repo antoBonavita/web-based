@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Piattaforma Studenti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <h1 class="navbar__logo">Piattaforma Studenti</h1>
+    <nav class="navbar__menu">
+      <a href="#">Home</a>
+      <a href="corsi.html">Corsi</a>
+      <a href="#profile">Profilo</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="courses">
+      <h2>Corsi Disponibili</h2>
+      <div class="courses__list">
+        <div class="course">
+          <h3>Informatica</h3>
+          <p>Introduzione alla programmazione e agli algoritmi.</p>
+        </div>
+        <div class="course">
+          <h3>Matematica</h3>
+          <p>Analisi, algebra e geometria per studenti universitari.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile">
+      <h2>Profilo Studente</h2>
+      <button id="toggleProfile">Mostra/Nascondi Dettagli</button>
+      <div class="profile__details" id="profileDetails">
+        <p><strong>Nome:</strong> Maria Rossi</p>
+        <p><strong>Email:</strong> maria.rossi@studenti.it</p>
+        <p><strong>Corsi iscritti:</strong> Informatica, Matematica</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Piattaforma Studenti - Tutti i diritti riservati</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
